@@ -32,7 +32,6 @@ export default function Navigation() {
 
   const navLinks = [
     { label: 'Over ons', href: '#over' },
-    { label: 'Diensten', href: '#diensten' },
     { label: 'Reviews', href: '#reviews' },
     { label: 'Contact', href: '/contact' },
   ];
