@@ -5,9 +5,9 @@ export default function Testimonial() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop"
+              src="/assets/toiletontstoppen.jpg"
               className="w-full h-[500px] object-cover rounded-sm grayscale-[20%]"
-              alt="Gestreste huiseigenaar"
+              alt="Toilet ontstoppen bij een klant"
             />
             <div className="absolute -bottom-8 -right-4 lg:-right-12 bg-white p-6 shadow-2xl max-w-sm rounded-sm border border-slate-100">
               <div className="flex gap-1 text-sky-500 mb-2">
@@ -28,17 +28,17 @@ export default function Testimonial() {
                 </svg>
               </div>
               <p className="text-sm text-slate-600 mb-3 leading-relaxed italic">
-                "Binnen een uur stonden ze voor de deur. Netjes gewerkt, alles uitgelegd en de prijs was wat vooraf afgesproken was."
+                &quot;Binnen een uur stonden ze voor de deur. Netjes gewerkt, alles uitgelegd en de prijs was wat vooraf afgesproken was.&quot;
               </p>
               <p className="font-semibold text-slate-900 text-sm">Braydon Butler</p>
             </div>
           </div>
           <div className="pl-0 lg:pl-12">
             <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-tight mb-6">
-              Dé oplossing voor al je loodgieterswerk en installaties
+              Dé oplossing voor al je riool- en ontstoppingswerk
             </h2>
             <p className="text-lg text-slate-500 leading-relaxed mb-8">
-              We combineren snelle responstijden met duurzame oplossingen. Of het nu gaat om onderhoud, lekkages of nieuwe installaties: wij regelen het zonder gedoe.
+              We combineren snelle responstijden met duurzame oplossingen. Of het nu gaat om onderhoud, camerainspecties of een acute verstopping: Rioolhulp Gils regelt het zonder gedoe.
             </p>
             <a href="tel:+31851304693" className="bg-slate-950 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-slate-800 transition-colors inline-block">
               Bel voor hulp: +31 85 130 4693

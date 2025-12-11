@@ -6,10 +6,10 @@ export default function WhyChooseUs() {
           <div className="space-y-12">
             <div>
               <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-tight mb-6">
-                De perfecte oplossing voor al je loodgieterswerk
+                De perfecte oplossing voor al je rioolwerk
               </h2>
               <p className="text-lg text-slate-500 leading-relaxed">
-                We denken mee, plannen strak in en werken opgeruimd. Met duidelijke afspraken vooraf en nazorg waar nodig.
+                We denken mee, plannen strak in en werken opgeruimd. Met duidelijke afspraken vooraf, keurmerken op orde en nazorg waar nodig.
               </p>
             </div>
             <div className="space-y-6">
@@ -43,15 +43,15 @@ export default function WhyChooseUs() {
           </div>
           <div className="relative h-[600px]">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop"
+              src="/assets/keukenafvoer.jpg"
               className="absolute top-0 right-0 w-3/4 h-3/5 object-cover rounded-sm z-10"
-              alt="Loodgieter onder de gootsteen"
+              alt="Keukenafvoer reinigen"
             />
             <div className="absolute bottom-0 left-0 w-3/5 h-2/5 bg-white p-4 z-20">
               <img
-                src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=600&auto=format&fit=crop"
+                src="/assets/voorbereidingbadkamer.jpg"
                 className="w-full h-full object-cover rounded-sm shadow-xl"
-                alt="Loodgieter repareert leiding"
+                alt="Badkamer voorbereiden voor rioolwerk"
               />
             </div>
           </div>

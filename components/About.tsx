@@ -6,14 +6,14 @@ export default function About() {
           <div className="relative flex gap-4">
             <div className="w-2/3 space-y-4">
               <img
-                src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=600&auto=format&fit=crop"
+                src="/assets/werkbus.jpg"
                 className="w-full h-64 object-cover rounded-sm"
-                alt="Loodgieter aan het werk"
+                alt="Werkbus van Rioolhulp Gils op locatie"
               />
               <img
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=600&auto=format&fit=crop"
+                src="/assets/voorbereidingbadkamer.jpg"
                 className="w-full h-48 object-cover rounded-sm"
-                alt="Gereedschap"
+                alt="Voorbereiding badkamer voor rioolwerk"
               />
             </div>
             <div className="w-1/3 flex flex-col gap-4">
@@ -24,22 +24,22 @@ export default function About() {
                 </span>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=400&auto=format&fit=crop"
+                src="/assets/keukenafvoer.jpg"
                 className="w-full h-40 object-cover rounded-sm mt-auto"
-                alt="Loodgieter repareert leiding"
+                alt="Reiniging van een keukenafvoer"
               />
             </div>
           </div>
           <div className="space-y-8">
             <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-950 leading-tight">
               Wij bieden de <br />
-              beste loodgietersservice
+              beste rioolservice
             </h2>
             <p className="text-lg text-slate-500 leading-relaxed">
-              Wij lossen lekkages, verstoppingen en installaties snel en vakkundig op. Heldere communicatie, nette afwerking en een vaste prijs vooraf: zo weet je precies waar je aan toe bent.
+              Rioolhulp Gils lost verstoppingen, stankproblemen en inspecties snel en vakkundig op. Heldere communicatie, nette afwerking en een vaste prijs vooraf: zo weet je precies waar je aan toe bent.
             </p>
             <a href="tel:+31851304693" className="bg-slate-950 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-slate-800 transition-colors inline-block">
-              Bel direct +31 85 130 4693
+              Bel Rioolhulp Gils: +31 85 130 4693
             </a>
           </div>
         </div>
