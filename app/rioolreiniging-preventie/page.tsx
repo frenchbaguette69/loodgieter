@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import Navigation from '@/components/Navigation';
+import CertificatesStrip from '@/components/CertificatesStrip';
 import Footer from '@/components/Footer';
 
 const services = [
@@ -80,7 +81,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Rioolhulp Gils - Rioolreiniging & preventie',
   url: 'https://rioolhulp-gils.nl/rioolreiniging-preventie',
-  telephone: '+31 85 130 4693',
+  telephone: '+31851091112',
   description:
     'Hogedruk rioolreiniging, frezen en preventief onderhoud voor woningen, VvE, horeca en bedrijven. Inclusief camera-inspectie en rapportage.',
   image: '/assets/rioolhulp.jpg',
@@ -141,10 +142,10 @@ export default function RioolreinigingPreventiePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
 
-        <section className="bg-slate-950 text-white">
+        <section className="bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900">
           <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-wide">
+              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs uppercase tracking-wide">
                 <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full">Preventie</span>
                 <span>Rioolreiniging & onderhoud</span>
               </div>
@@ -153,15 +154,15 @@ export default function RioolreinigingPreventiePage() {
                 <br />
                 voor blijvende doorstroming
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+              <p className="text-lg text-slate-700 leading-relaxed max-w-2xl">
                 Hogedrukreiniging en preventieve behandelingen houden leidingen schoon en veilig. We reinigen, frezen en inspecteren met camera zodat verstoppingen geen kans krijgen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851304693"
-                  className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-sky-500/30 transition-colors"
+                  href="tel:+31851091112"
+                  className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  Plan reiniging: +31 85 130 4693
+                  BEL DIRECT voor reiniging: 085 109 1112
                 </a>
                 <a
                   href="#diensten"
@@ -170,10 +171,10 @@ export default function RioolreinigingPreventiePage() {
                   Bekijk diensten
                 </a>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-white/70">
-                <div className="p-3 rounded border border-white/10 bg-white/5">Hogedruk & frezen</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Camera rapportage</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Planmatig onderhoud</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-slate-600">
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Hogedruk & frezen</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Camera rapportage</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Planmatig onderhoud</div>
               </div>
             </div>
             <div className="relative h-full">
@@ -212,10 +213,10 @@ export default function RioolreinigingPreventiePage() {
                 </p>
               </div>
               <a
-                href="tel:+31851304693"
-                className="bg-slate-950 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+                href="tel:+31851091112"
+                className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                Plan onderhoud
+                BEL DIRECT: 085 109 1112
               </a>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -277,20 +278,20 @@ export default function RioolreinigingPreventiePage() {
           </div>
         </section>
 
-        <section id="faq" className="w-full py-20 bg-slate-950 text-white">
+        <section id="faq" className="w-full py-20 bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900">
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-wide text-white/70">Veelgestelde vragen</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-600">Veelgestelde vragen</p>
               <h2 className="text-3xl lg:text-4xl font-semibold tracking-tight">Alles over rioolreiniging en preventie</h2>
-              <p className="text-sm text-white/70">
+              <p className="text-sm text-slate-600">
                 Staat jouw vraag er niet bij? Bel direct; je spreekt meteen een monteur die kan meedenken over planning en kosten.
               </p>
             </div>
             <div className="space-y-4">
               {faqs.map((item) => (
-                <div key={item.q} className="bg-white/5 border border-white/10 rounded-sm p-4">
+                <div key={item.q} className="bg-slate-50 border border-slate-200 rounded-sm p-4">
                   <h3 className="text-lg font-semibold mb-2">{item.q}</h3>
-                  <p className="text-sm text-white/80 leading-relaxed">{item.a}</p>
+                  <p className="text-sm text-slate-700 leading-relaxed">{item.a}</p>
                 </div>
               ))}
             </div>
@@ -310,14 +311,14 @@ export default function RioolreinigingPreventiePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+31851304693"
-                className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-sky-500/30 transition-colors"
+                href="tel:+31851091112"
+                className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
               >
-                Bel 24/7: +31 85 130 4693
+                BEL DIRECT 24/7: 085 109 1112
               </a>
               <a
                 href="/ontstoppingsdienst#reiniging"
-                className="bg-slate-950 text-white hover:bg-slate-800 px-8 py-3 rounded-full font-semibold transition-colors"
+                className="bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900 hover:bg-slate-800 px-8 py-3 rounded-full font-semibold transition-colors"
               >
                 Spoed nodig?
               </a>
@@ -325,6 +326,7 @@ export default function RioolreinigingPreventiePage() {
           </div>
         </section>
       </main>
+      <CertificatesStrip />
       <Footer />
     </>
   );

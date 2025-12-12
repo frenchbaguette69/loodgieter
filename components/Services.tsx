@@ -78,14 +78,14 @@ export default function Services() {
               <span className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-full">24/7 Service</span>
             </div>
           </div>
-          <div className="bg-slate-900 text-white p-6 rounded-sm flex flex-col justify-between gap-4">
+          <div className="bg-lime-50 text-slate-900 p-6 rounded-sm flex flex-col justify-between gap-4 border border-lime-100">
             <div>
-              <p className="text-sm uppercase tracking-wide text-white/80 mb-2">Spoed nodig?</p>
+              <p className="text-sm uppercase tracking-wide text-slate-700 mb-2">Spoed nodig?</p>
               <h3 className="text-2xl font-semibold leading-tight">Binnen 30 minuten onderweg naar jouw locatie</h3>
-              <p className="text-sm text-white/80 mt-3">Bel voor directe rioolhulp of plan onderhoud in wanneer het jou uitkomt.</p>
+              <p className="text-sm text-slate-700 mt-3">Bel voor directe rioolhulp of plan onderhoud in wanneer het jou uitkomt.</p>
             </div>
-            <a href="tel:+31851304693" className="bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-100 transition-colors w-fit">
-              Bel 24/7: +31 85 130 4693
+            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-300/40 w-fit">
+              BEL DIRECT: 085 109 1112
             </a>
           </div>
         </div>

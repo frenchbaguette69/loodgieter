@@ -7,6 +7,7 @@ import Services from '@/components/Services';
 import Testimonial from '@/components/Testimonial';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Stats from '@/components/Stats';
+import CertificatesStrip from '@/components/CertificatesStrip';
 import Footer from '@/components/Footer';
 
 const structuredData = {
@@ -14,7 +15,7 @@ const structuredData = {
   '@type': 'Plumber',
   name: 'Rioolhulp Gils',
   url: 'https://rioolhulp-gils.nl',
-  telephone: '+31 85 130 4693',
+  telephone: '+31851091112',
   description:
     'Rioolhulp Gils biedt 24/7 ontstoppingsdienst, rioolonderhoud, camera inspectie, spoedservice, rioolreiniging en preventieve afvoerreiniging.',
   image: '/assets/rioolhulp.jpg',
@@ -82,6 +83,7 @@ export default function Home() {
       <Testimonial />
       <WhyChooseUs />
       <Stats />
+      <CertificatesStrip />
       <Footer />
     </>
   );

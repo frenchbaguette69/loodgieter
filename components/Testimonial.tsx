@@ -40,8 +40,8 @@ export default function Testimonial() {
             <p className="text-lg text-slate-500 leading-relaxed mb-8">
               We combineren snelle responstijden met duurzame oplossingen. Of het nu gaat om onderhoud, camerainspecties of een acute verstopping: Rioolhulp Gils regelt het zonder gedoe.
             </p>
-            <a href="tel:+31851304693" className="bg-slate-950 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-slate-800 transition-colors inline-block">
-              Bel voor hulp: +31 85 130 4693
+            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full text-base font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40 inline-block">
+              BEL DIRECT: 085 109 1112
             </a>
           </div>
         </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import CertificatesStrip from '@/components/CertificatesStrip';
 
 const uspList = [
   '24/7 bereikbaar, binnen 30-45 minuten onderweg',
@@ -91,7 +92,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Rioolhulp Gils - 24/7 Ontstoppingsdienst',
   url: 'https://rioolhulp-gils.nl/ontstoppingsdienst',
-  telephone: '+31 85 130 4693',
+  telephone: '+31851091112',
   description:
     '24/7 ontstoppingsdienst voor wc, riool, keuken- en badkamerafvoer. Spoedservice, camera inspectie en preventief onderhoud in Gils en omgeving.',
   image: '/assets/rioolhulp.jpg',
@@ -152,10 +153,10 @@ export default function OntstoppingsdienstPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <section id="spoed" className="bg-slate-950 text-white">
+      <section id="spoed" className="bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900">
         <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-wide">
+            <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs uppercase tracking-wide">
               <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full">24/7</span>
               <span>Spoed ontstoppingsdienst</span>
             </div>
@@ -163,16 +164,16 @@ export default function OntstoppingsdienstPage() {
               24/7 ontstoppingsdienst <br />
               voor wc, riool en afvoer
             </h1>
-            <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+            <p className="text-lg text-slate-700 leading-relaxed max-w-2xl">
               Direct hulp nodig? Rioolhulp Gils staat dag en nacht paraat met ervaren monteurs, camera-inspectie en
               hogedrukreiniging. Transparante prijs vooraf en snel ter plaatse in Gils en omgeving.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+31851304693"
-                className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-sky-500/30 transition-colors"
+                href="tel:+31851091112"
+                className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
               >
-                Bel 24/7: +31 85 130 4693
+                BEL DIRECT 24/7: 085 109 1112
               </a>
               <a
                 href="#faq"
@@ -181,10 +182,10 @@ export default function OntstoppingsdienstPage() {
                 Veelgestelde vragen
               </a>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-white/70">
-              <div className="p-3 rounded border border-white/10 bg-white/5">Binnen 30-45 min onderweg</div>
-              <div className="p-3 rounded border border-white/10 bg-white/5">Geen verborgen kosten</div>
-              <div className="p-3 rounded border border-white/10 bg-white/5">Camera-inspectie op voorraad</div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-slate-600">
+              <div className="p-3 rounded border border-slate-200 bg-slate-50">Binnen 30-45 min onderweg</div>
+              <div className="p-3 rounded border border-slate-200 bg-slate-50">Geen verborgen kosten</div>
+              <div className="p-3 rounded border border-slate-200 bg-slate-50">Camera-inspectie op voorraad</div>
             </div>
           </div>
           <div className="relative h-full">
@@ -224,10 +225,10 @@ export default function OntstoppingsdienstPage() {
               </p>
             </div>
             <a
-              href="tel:+31851304693"
-              className="self-start bg-slate-900 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+              href="tel:+31851091112"
+              className="self-start bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              Bel nu voor spoed
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -274,31 +275,31 @@ export default function OntstoppingsdienstPage() {
               ))}
             </div>
           </div>
-          <div className="bg-slate-900 text-white rounded-md p-8 space-y-6">
+          <div className="bg-lime-50 text-slate-900 rounded-md p-8 space-y-6 border border-lime-100">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-white text-slate-900 flex items-center justify-center font-semibold">
                 24/7
               </div>
               <div>
-                <p className="text-sm text-white/70 uppercase tracking-wide">Spoedlijn</p>
-                <p className="text-2xl font-semibold">+31 85 130 4693</p>
+                <p className="text-sm text-slate-600 uppercase tracking-wide">Spoedlijn</p>
+                <p className="text-2xl font-semibold text-slate-900">085 109 1112</p>
               </div>
             </div>
-            <p className="text-sm text-white/80 leading-relaxed">
+            <p className="text-sm text-slate-700 leading-relaxed">
               Bel ons direct. We checken telefonisch de situatie en sturen een monteur met het juiste materiaal. Ook
               beschikbaar voor nacht- en weekenddienst.
             </p>
-            <div className="grid grid-cols-2 gap-3 text-sm text-white/80">
-              <div className="p-3 rounded bg-white/10 border border-white/10">Gils en omgeving</div>
-              <div className="p-3 rounded bg-white/10 border border-white/10">Camera-inspectie mogelijk</div>
-              <div className="p-3 rounded bg-white/10 border border-white/10">Hogedrukreiniging</div>
-              <div className="p-3 rounded bg-white/10 border border-white/10">Keurmerken op orde</div>
+            <div className="grid grid-cols-2 gap-3 text-sm text-slate-700">
+              <div className="p-3 rounded bg-white border border-slate-200">Gils en omgeving</div>
+              <div className="p-3 rounded bg-white border border-slate-200">Camera-inspectie mogelijk</div>
+              <div className="p-3 rounded bg-white border border-slate-200">Hogedrukreiniging</div>
+              <div className="p-3 rounded bg-white border border-slate-200">Keurmerken op orde</div>
             </div>
             <a
-              href="tel:+31851304693"
-              className="inline-block bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-100 transition-colors"
+              href="tel:+31851091112"
+              className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              Bel direct voor spoed
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
         </div>
@@ -336,10 +337,10 @@ export default function OntstoppingsdienstPage() {
               <span className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-full">24/7 Service</span>
             </div>
             <a
-              href="tel:+31851304693"
-              className="inline-block bg-slate-900 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+              href="tel:+31851091112"
+              className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              Bel 24/7: +31 85 130 4693
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
         </div>
@@ -363,19 +364,20 @@ export default function OntstoppingsdienstPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50 border border-slate-200 rounded-md p-5">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Hulp nodig?</p>
-              <h3 className="text-xl font-semibold">Bel direct: +31 85 130 4693</h3>
+              <h3 className="text-xl font-semibold">BEL DIRECT: 085 109 1112</h3>
               <p className="text-sm text-slate-600">Altijd bereikbaar voor spoed en advies.</p>
             </div>
             <a
-              href="tel:+31851304693"
-              className="bg-sky-500 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-sky-600 transition-colors shadow-lg shadow-sky-500/20"
+              href="tel:+31851091112"
+              className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              Bel 24/7
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
       </main>
+      <CertificatesStrip />
       <Footer />
     </>
   );

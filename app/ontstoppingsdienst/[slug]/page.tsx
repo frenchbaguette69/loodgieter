@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import CertificatesStrip from '@/components/CertificatesStrip';
 import plaatsenList from '@/app/data/plaatsen';
 
 type Params = { slug: string };
@@ -70,7 +71,7 @@ export default function PlaatsPage({ params }: { params: Params }) {
     '@type': 'LocalBusiness',
     name: `Rioolhulp Gils - ${place.name}`,
     url: `https://rioolhulp-gils.nl${path}`,
-    telephone: '+31 85 130 4693',
+    telephone: '+31851091112',
     description:
       `Rioolservice in ${place.name}: 24/7 ontstoppingsdienst, camera inspectie, hogedrukreiniging en preventief onderhoud.`,
     areaServed: { '@type': 'City', name: place.name },
@@ -90,10 +91,10 @@ export default function PlaatsPage({ params }: { params: Params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
 
-        <section className="bg-slate-950 text-white">
+        <section className="bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900">
           <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-wide">
+              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs uppercase tracking-wide">
                 <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full">24/7</span>
                 <span>Ontstoppingsdienst in {place.name}</span>
               </div>
@@ -101,15 +102,15 @@ export default function PlaatsPage({ params }: { params: Params }) {
                 Ontstoppingsdienst <br />
                 en rioolinspectie in {place.name}
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+              <p className="text-lg text-slate-700 leading-relaxed max-w-2xl">
                 Binnen 30-45 minuten onderweg in {place.name} en omgeving. Camera inspectie, hogedrukreiniging en preventief onderhoud met duidelijke prijzen en nette oplevering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851304693"
-                  className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-sky-500/30 transition-colors"
+                  href="tel:+31851091112"
+                  className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  Bel 24/7: +31 85 130 4693
+                  BEL DIRECT 24/7: 085 109 1112
                 </a>
                 <a
                   href="/contact"
@@ -118,10 +119,10 @@ export default function PlaatsPage({ params }: { params: Params }) {
                   Vraag een planning aan
                 </a>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-white/70">
-                <div className="p-3 rounded border border-white/10 bg-white/5">Binnen 30-45 min onderweg</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Camera & hogedruk</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Geen verborgen kosten</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-slate-600">
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Binnen 30-45 min onderweg</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Camera & hogedruk</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Geen verborgen kosten</div>
               </div>
             </div>
             <div className="relative h-full">
@@ -185,6 +186,7 @@ export default function PlaatsPage({ params }: { params: Params }) {
           </div>
         </section>
       </main>
+      <CertificatesStrip />
       <Footer />
     </>
   );

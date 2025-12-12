@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <section className="w-full bg-slate-950 py-24">
+    <section className="w-full bg-slate-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-sm hover:-translate-y-1 transition-transform duration-300">

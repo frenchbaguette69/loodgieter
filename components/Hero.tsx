@@ -35,8 +35,8 @@ export default function Hero() {
             Rioolhulp Gils is jouw rioolpartner voor spoed, onderhoud en inspectie. Eén telefoontje en onze ontstoppingsdienst staat bij je deur.
           </p>
           <div>
-            <a href="tel:+31851304693" className="bg-sky-500 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-sky-600 transition-colors shadow-lg shadow-sky-500/30 inline-block">
-              24/7 bereikbaar: +31 85 130 4693
+            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full text-base font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40 inline-block">
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
         </div>

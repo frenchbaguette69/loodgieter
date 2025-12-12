@@ -78,10 +78,10 @@ export default function Navigation() {
 
         <div className="hidden md:flex">
           <a
-            href="tel:+31851304693"
-            className="bg-slate-950 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors"
+            href="tel:+31851091112"
+            className="bg-lime-300 text-slate-900 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
           >
-            Bel nu +31 85 130 4693
+            BEL DIRECT 085 109 1112
           </a>
         </div>
 
@@ -150,14 +150,14 @@ export default function Navigation() {
             </div>
             <div className="mt-auto flex flex-col gap-3">
               <a
-                href="tel:+31851304693"
-                className="w-full text-center bg-slate-950 text-white px-4 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+                href="tel:+31851091112"
+                className="w-full text-center bg-lime-300 text-slate-900 px-4 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
                 onClick={() => setOpen(false)}
               >
-                Bel nu +31 85 130 4693
+                BEL DIRECT 085 109 1112
               </a>
               <a
-                href="mailto:service@rioolhulp-gils.nl"
+                href="mailto:info@loodgieter-gils.nl"
                 className="w-full text-center border border-slate-200 text-slate-900 px-4 py-3 rounded-full text-sm font-semibold hover:bg-slate-50 transition-colors"
                 onClick={() => setOpen(false)}
               >
@@ -171,14 +171,14 @@ export default function Navigation() {
       <div className="fixed inset-x-0 bottom-0 z-40 md:hidden bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(15,23,42,0.08)]">
         <div className="max-w-7xl mx-auto grid grid-cols-2">
           <a
-            href="tel:+31851304693"
-            className="flex items-center justify-center gap-2 py-3 text-sm font-semibold text-white bg-slate-950 hover:bg-slate-800 transition-colors"
+            href="tel:+31851091112"
+            className="flex items-center justify-center gap-2 py-3 text-sm font-semibold text-slate-900 bg-lime-300 hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
           >
             <FiPhoneCall className="w-4 h-4" />
-            Bel nu
+            BEL DIRECT 085 109 1112
           </a>
           <a
-            href="https://wa.me/31851304693"
+            href="https://wa.me/31851091112"
             className="flex items-center justify-center gap-2 py-3 text-sm font-semibold text-slate-950 bg-white hover:bg-slate-50 transition-colors"
           >
             <FaWhatsapp className="w-5 h-5" />

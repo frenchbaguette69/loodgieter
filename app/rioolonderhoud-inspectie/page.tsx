@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import Navigation from '@/components/Navigation';
+import CertificatesStrip from '@/components/CertificatesStrip';
 import Footer from '@/components/Footer';
 
 const services = [
@@ -85,7 +86,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Rioolhulp Gils - Rioolonderhoud & Inspectie',
   url: 'https://rioolhulp-gils.nl/rioolonderhoud-inspectie',
-  telephone: '+31 85 130 4693',
+  telephone: '+31851091112',
   description:
     'Rioolonderhoud en camera inspectie voor woningen, VvE, horeca en bedrijven. Preventie, hogedrukreiniging en rapportage in Gils en omgeving.',
   image: '/assets/rioolhulp.jpg',
@@ -146,10 +147,10 @@ export default function RioolonderhoudInspectiePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
 
-        <section className="bg-slate-950 text-white">
+        <section className="bg-gradient-to-r from-lime-50 via-white to-sky-50 text-slate-900">
           <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs uppercase tracking-wide">
+              <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs uppercase tracking-wide">
                 <span className="bg-sky-500 text-white px-2 py-0.5 rounded-full">Preventie</span>
                 <span>Rioolonderhoud & inspectie</span>
               </div>
@@ -157,15 +158,15 @@ export default function RioolonderhoudInspectiePage() {
                 Rioolonderhoud en <br />
                 camera inspectie op maat
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
+              <p className="text-lg text-slate-700 leading-relaxed max-w-2xl">
                 Voorkom verstoppingen en stank met planmatig rioolonderhoud, camerainspectie en hogedrukreiniging. Rioolhulp Gils levert rapportage, advies en werkt desgewenst buiten openingstijden.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851304693"
-                  className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-sky-500/30 transition-colors"
+                  href="tel:+31851091112"
+                  className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  Bel voor onderhoud: +31 85 130 4693
+                  BEL DIRECT voor onderhoud: 085 109 1112
                 </a>
                 <a
                   href="#services"
@@ -174,10 +175,10 @@ export default function RioolonderhoudInspectiePage() {
                   Bekijk diensten
                 </a>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-white/70">
-                <div className="p-3 rounded border border-white/10 bg-white/5">Camera inspectie</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Hogedruk & frezen</div>
-                <div className="p-3 rounded border border-white/10 bg-white/5">Rapportage & advies</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-slate-600">
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Camera inspectie</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Hogedruk & frezen</div>
+                <div className="p-3 rounded border border-slate-200 bg-slate-50">Rapportage & advies</div>
               </div>
             </div>
             <div className="relative h-full">
@@ -216,10 +217,10 @@ export default function RioolonderhoudInspectiePage() {
                 </p>
               </div>
               <a
-                href="tel:+31851304693"
-                className="self-start bg-slate-900 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+                href="tel:+31851091112"
+                className="self-start bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                Plan onderhoud
+                BEL DIRECT: 085 109 1112
               </a>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -264,30 +265,30 @@ export default function RioolonderhoudInspectiePage() {
                 ))}
               </div>
             </div>
-            <div className="bg-slate-900 text-white rounded-md p-8 space-y-6">
+            <div className="bg-lime-50 text-slate-900 rounded-md p-8 space-y-6 border border-lime-100">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-white text-slate-900 flex items-center justify-center font-semibold">
                   24/7
                 </div>
                 <div>
-                  <p className="text-sm text-white/70 uppercase tracking-wide">Contact & planning</p>
-                  <p className="text-2xl font-semibold">+31 85 130 4693</p>
+                  <p className="text-sm text-slate-600 uppercase tracking-wide">Contact & planning</p>
+                  <p className="text-2xl font-semibold text-slate-900">085 109 1112</p>
                 </div>
               </div>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-slate-700 leading-relaxed">
                 Bel voor onderhoud, inspectie of een quickscan. We plannen direct en stemmen af op jouw openingstijden. Bij spoed schakelen we onze 24/7 ontstoppingsdienst in.
               </p>
-              <div className="grid grid-cols-2 gap-3 text-sm text-white/80">
-                <div className="p-3 rounded bg-white/10 border border-white/10">Camera rapportage</div>
-                <div className="p-3 rounded bg-white/10 border border-white/10">Hogedruk & frezen</div>
-                <div className="p-3 rounded bg-white/10 border border-white/10">Preventief schema</div>
-                <div className="p-3 rounded bg-white/10 border border-white/10">Keurmerken op orde</div>
+              <div className="grid grid-cols-2 gap-3 text-sm text-slate-700">
+                <div className="p-3 rounded bg-white border border-slate-200">Camera rapportage</div>
+                <div className="p-3 rounded bg-white border border-slate-200">Hogedruk & frezen</div>
+                <div className="p-3 rounded bg-white border border-slate-200">Preventief schema</div>
+                <div className="p-3 rounded bg-white border border-slate-200">Keurmerken op orde</div>
               </div>
               <a
-                href="tel:+31851304693"
-                className="inline-block bg-white text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-100 transition-colors"
+                href="tel:+31851091112"
+                className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                Plan een inspectie
+                BEL DIRECT: 085 109 1112
               </a>
             </div>
           </div>
@@ -324,10 +325,10 @@ export default function RioolonderhoudInspectiePage() {
                 <span className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-full">Preventieplan</span>
               </div>
               <a
-                href="tel:+31851304693"
-                className="inline-block bg-slate-900 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors"
+                href="tel:+31851091112"
+                className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                Plan onderhoud
+                BEL DIRECT: 085 109 1112
               </a>
             </div>
           </div>
@@ -351,19 +352,20 @@ export default function RioolonderhoudInspectiePage() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50 border border-slate-200 rounded-md p-5">
               <div>
                 <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Hulp nodig?</p>
-                <h3 className="text-xl font-semibold">Bel direct: +31 85 130 4693</h3>
-                <p className="text-sm text-slate-600">Plan onderhoud of vraag een inspectie aan.</p>
+                <h3 className="text-xl font-semibold">BEL DIRECT: 085 109 1112</h3>
+                <p className="text-sm text-slate-600">BEL DIRECT 085 109 1112 of vraag een inspectie aan.</p>
               </div>
               <a
-                href="tel:+31851304693"
-                className="bg-sky-500 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-sky-600 transition-colors shadow-lg shadow-sky-500/20"
+                href="tel:+31851091112"
+                className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                Bel nu
+                BEL DIRECT 085 109 1112
               </a>
             </div>
           </div>
         </section>
       </main>
+      <CertificatesStrip />
       <Footer />
     </>
   );

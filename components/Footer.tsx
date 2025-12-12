@@ -8,8 +8,8 @@ export default function Footer() {
             <p className="text-sm text-slate-500 leading-relaxed">
               rioolhulp-gils.nl is jouw partner voor rioolontstopping, onderhoud en inspectie. Snel ter plaatse, duidelijke communicatie en werk waar je op kunt bouwen.
             </p>
-            <a href="tel:+31851304693" className="bg-slate-950 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors w-fit inline-block">
-              24/7 hulp: +31 85 130 4693
+            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40 w-fit inline-block">
+              BEL DIRECT 24/7: 085 109 1112
             </a>
           </div>
           <div>
@@ -27,8 +27,15 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-slate-900 tracking-wide uppercase mb-4">Contact</h3>
             <div className="flex flex-col gap-3 text-sm text-slate-500">
               <span className="text-slate-900 font-medium">Regio Gils & omgeving</span>
-              <a href="tel:+31851304693" className="hover:text-slate-900 transition-colors">+31 85 130 4693</a>
-              <a href="mailto:service@rioolhulp-gils.nl" className="hover:text-slate-900 transition-colors">service@rioolhulp-gils.nl</a>
+              <div className="flex flex-col">
+                <span className="text-slate-900 font-semibold">Kantoor (geen bezoekadres)</span>
+                <span>Atoomweg 63, 3542 AA Utrecht</span>
+                <span className="text-slate-500">(Bezoek alleen op afspraak)</span>
+              </div>
+              <a href="tel:+31851091112" className="inline-flex items-center w-fit bg-lime-300 text-slate-900 px-4 py-2.5 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40">
+                BEL DIRECT 085 109 1112
+              </a>
+              <a href="mailto:info@loodgieter-gils.nl" className="hover:text-slate-900 transition-colors">info@loodgieter-gils.nl</a>
             </div>
           </div>
         </div>
