@@ -4,9 +4,27 @@ import { FormEvent, useState } from 'react';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>('idle');
   const [error, setError] = useState('');
+
+  const reportConversion = () => {
+    const callback = () => {};
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-16701586220/dNA-COCVytAbEKz295s-',
+        value: 1.0,
+        currency: 'EUR',
+        event_callback: callback,
+      });
+    }
+  };
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -40,6 +58,7 @@ export default function ContactForm() {
         throw new Error(data?.error || 'Bericht versturen mislukt. Probeer opnieuw.');
       }
 
+      reportConversion();
       setStatus('success');
       form.reset();
     } catch (err) {

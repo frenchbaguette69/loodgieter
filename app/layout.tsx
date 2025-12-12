@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -57,6 +58,61 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16701586220"
+        />
+        <Script id="gtag-aw-16701586220" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16701586220');
+          `}
+        </Script>
+        <Script id="gtag-call-whatsapp-conversion" strategy="afterInteractive">
+          {`
+            (function() {
+              if (window.__gtagCallHandlerBound) return;
+              window.__gtagCallHandlerBound = true;
+
+              const sendCallConversion = (url) => {
+                const redirect = () => {
+                  if (url) window.location.href = url;
+                };
+
+                if (typeof window.gtag === 'function') {
+                  window.gtag('event', 'conversion', {
+                    send_to: 'AW-16701586220/Db_sCOmvu9AbEKz295s-',
+                    value: 1.0,
+                    currency: 'EUR',
+                    event_callback: redirect,
+                  });
+                  setTimeout(redirect, 1000);
+                } else {
+                  redirect();
+                }
+              };
+
+              const handleClick = (event) => {
+                const anchor = event.target.closest('a[href]');
+                if (!anchor) return;
+
+                const href = anchor.getAttribute('href') || '';
+                const isCall = href.startsWith('tel:+31851091112');
+                const isWhatsApp = href.includes('wa.me/31851091112');
+                if (!isCall && !isWhatsApp) return;
+
+                event.preventDefault();
+                sendCallConversion(href);
+              };
+
+              document.addEventListener('click', handleClick);
+            })();
+          `}
+        </Script>
+      </head>
       <body className={`${inter.className} bg-white text-slate-800 antialiased`}>
         {children}
       </body>
