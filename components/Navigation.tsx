@@ -175,7 +175,7 @@ export default function Navigation() {
             className="flex items-center justify-center gap-2 py-3 text-sm font-semibold text-slate-900 bg-lime-300 hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
           >
             <FiPhoneCall className="w-4 h-4" />
-            BEL DIRECT 085 109 1112
+             085 109 1112
           </a>
           <a
             href="https://wa.me/31851091112"
