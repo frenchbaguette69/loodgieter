@@ -1,3 +1,5 @@
+import { FaHardHat, FaTags } from 'react-icons/fa';
+
 export default function WhyChooseUs() {
   return (
     <section className="w-full py-24 bg-white">
@@ -15,9 +17,7 @@ export default function WhyChooseUs() {
             <div className="space-y-6">
               <div className="flex gap-6 items-start">
                 <div className="w-16 h-16 rounded-xl bg-sky-500 text-white flex-shrink-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" className="w-8 h-8">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
+                  <FaTags className="w-8 h-8" aria-hidden />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900 mb-2">Scherpe prijzen</h3>
@@ -28,9 +28,7 @@ export default function WhyChooseUs() {
               </div>
               <div className="flex gap-6 items-start">
                 <div className="w-16 h-16 rounded-xl bg-sky-500 text-white flex-shrink-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" className="w-8 h-8">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                  </svg>
+                  <FaHardHat className="w-8 h-8" aria-hidden />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900 mb-2">Ervaren vakmensen</h3>
