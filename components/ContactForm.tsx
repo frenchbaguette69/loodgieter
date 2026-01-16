@@ -7,6 +7,7 @@ type Status = 'idle' | 'loading' | 'success' | 'error';
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    gtag_report_conversion?: (url?: string) => boolean;
   }
 }
 
@@ -15,13 +16,15 @@ export default function ContactForm() {
   const [error, setError] = useState('');
 
   const reportConversion = () => {
-    const callback = () => {};
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion();
+      return;
+    }
     if (typeof window.gtag === 'function') {
       window.gtag('event', 'conversion', {
         send_to: 'AW-16701586220/dNA-COCVytAbEKz295s-',
         value: 1.0,
         currency: 'EUR',
-        event_callback: callback,
       });
     }
   };

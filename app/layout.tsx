@@ -71,6 +71,24 @@ export default function RootLayout({
             gtag('config', 'AW-16701586220');
           `}
         </Script>
+        <Script id="gtag-report-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16701586220/dNA-COCVytAbEKz295s-',
+                'value': 1.0,
+                'currency': 'EUR',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
         <Script id="gtag-call-whatsapp-conversion" strategy="afterInteractive">
           {`
             (function() {
