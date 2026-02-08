@@ -44,12 +44,11 @@ export function generateStaticParams() {
   return placeEntries.map((place) => ({ slug: place.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
-  const resolved = await params;
-  if (!resolved?.slug) return {};
-  const place = getPlace(resolved.slug);
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  if (!params?.slug) return {};
+  const place = getPlace(params.slug);
 
-  const path = `/ontstoppingsdienst/${resolved.slug}`;
+  const path = `/ontstoppingsdienst/${params.slug}`;
   const title = `Ontstoppingsdienst in ${place.name} | Rioolhulp Gils`;
   const description =
     `24/7 rioolhulp in ${place.name}: ontstoppingsdienst, camera inspectie en hogedrukreiniging. Binnen 30-45 minuten onderweg, transparante prijzen en nette oplevering.`;
@@ -71,11 +70,10 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   };
 }
 
-export default async function PlaatsPage({ params }: { params: Promise<Params> }) {
-  const resolved = await params;
-  const place = getPlace(resolved?.slug);
+export default function PlaatsPage({ params }: { params: Params }) {
+  const place = getPlace(params?.slug);
 
-  const path = `/ontstoppingsdienst/${resolved.slug}`;
+  const path = `/ontstoppingsdienst/${params.slug}`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',

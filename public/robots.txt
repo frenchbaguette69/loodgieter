@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rioolhulp-gils.nl
+
+# Sitemaps
+Sitemap: https://rioolhulp-gils.nl/sitemapnummer2.xml
