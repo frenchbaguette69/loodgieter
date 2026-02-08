@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -27,19 +26,30 @@ function slugify(name: string) {
 
 const placeEntries = plaatsenList.map((name) => ({ name, slug: slugify(name) }));
 
-function getPlace(slug: string) {
-  return placeEntries.find((item) => item.slug === slug);
+function formatSlug(slug?: string) {
+  if (!slug) return 'Onbekende plaats';
+  return slug
+    .replace(/-/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function getPlace(slug?: string) {
+  if (!slug) return { name: formatSlug(slug), slug: '' };
+  return placeEntries.find((item) => item.slug === slug) ?? { name: formatSlug(slug), slug };
 }
 
 export function generateStaticParams() {
   return placeEntries.map((place) => ({ slug: place.slug }));
 }
 
-export function generateMetadata({ params }: { params: Params }): Metadata {
-  const place = getPlace(params.slug);
-  if (!place) return {};
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const resolved = await params;
+  if (!resolved?.slug) return {};
+  const place = getPlace(resolved.slug);
 
-  const path = `/ontstoppingsdienst/${params.slug}`;
+  const path = `/ontstoppingsdienst/${resolved.slug}`;
   const title = `Ontstoppingsdienst in ${place.name} | Rioolhulp Gils`;
   const description =
     `24/7 rioolhulp in ${place.name}: ontstoppingsdienst, camera inspectie en hogedrukreiniging. Binnen 30-45 minuten onderweg, transparante prijzen en nette oplevering.`;
@@ -61,11 +71,11 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
   };
 }
 
-export default function PlaatsPage({ params }: { params: Params }) {
-  const place = getPlace(params.slug);
-  if (!place) return notFound();
+export default async function PlaatsPage({ params }: { params: Promise<Params> }) {
+  const resolved = await params;
+  const place = getPlace(resolved?.slug);
 
-  const path = `/ontstoppingsdienst/${params.slug}`;
+  const path = `/ontstoppingsdienst/${resolved.slug}`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
