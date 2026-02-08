@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import CertificatesStrip from '@/components/CertificatesStrip';
@@ -26,8 +27,7 @@ function slugify(name: string) {
 
 const placeEntries = plaatsenList.map((name) => ({ name, slug: slugify(name) }));
 
-function formatSlug(slug?: string) {
-  if (!slug) return 'Onbekende plaats';
+function formatSlug(slug: string) {
   return slug
     .replace(/-/g, ' ')
     .replace(/\s+/g, ' ')
@@ -36,8 +36,14 @@ function formatSlug(slug?: string) {
 }
 
 function getPlace(slug?: string) {
-  if (!slug) return { name: formatSlug(slug), slug: '' };
-  return placeEntries.find((item) => item.slug === slug) ?? { name: formatSlug(slug), slug };
+  if (!slug) return { name: 'Onbekende plaats', slug: '' };
+  const normalizedSlug = slugify(slug);
+  return (
+    placeEntries.find((item) => item.slug === normalizedSlug) ?? {
+      name: formatSlug(normalizedSlug),
+      slug: normalizedSlug,
+    }
+  );
 }
 
 export function generateStaticParams() {
@@ -48,7 +54,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!params?.slug) return {};
   const place = getPlace(params.slug);
 
-  const path = `/ontstoppingsdienst/${params.slug}`;
+  const path = `/ontstoppingsdienst/${place.slug}`;
   const title = `Ontstoppingsdienst in ${place.name} | Rioolhulp Gils`;
   const description =
     `24/7 rioolhulp in ${place.name}: ontstoppingsdienst, camera inspectie en hogedrukreiniging. Binnen 30-45 minuten onderweg, transparante prijzen en nette oplevering.`;
@@ -71,9 +77,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 export default function PlaatsPage({ params }: { params: Params }) {
-  const place = getPlace(params?.slug);
+  if (!params?.slug) notFound();
+  const place = getPlace(params.slug);
 
-  const path = `/ontstoppingsdienst/${params.slug}`;
+  const path = `/ontstoppingsdienst/${place.slug}`;
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -93,7 +100,7 @@ export default function PlaatsPage({ params }: { params: Params }) {
       <Navigation />
       <main className="bg-white text-slate-900">
         <Script
-          id={`schema-${params.slug}`}
+          id={`schema-${place.slug}`}
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
