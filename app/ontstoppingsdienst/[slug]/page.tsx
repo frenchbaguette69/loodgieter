@@ -50,9 +50,10 @@ export function generateStaticParams() {
   return placeEntries.map((place) => ({ slug: place.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  if (!params?.slug) return {};
-  const place = getPlace(params.slug);
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const resolved = await params;
+  if (!resolved?.slug) return {};
+  const place = getPlace(resolved.slug);
 
   const path = `/ontstoppingsdienst/${place.slug}`;
   const title = `Ontstoppingsdienst in ${place.name} | Rioolhulp Gils`;
@@ -76,9 +77,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-export default function PlaatsPage({ params }: { params: Params }) {
-  if (!params?.slug) notFound();
-  const place = getPlace(params.slug);
+export default async function PlaatsPage({ params }: { params: Promise<Params> }) {
+  const resolved = await params;
+  if (!resolved?.slug) notFound();
+  const place = getPlace(resolved.slug);
 
   const path = `/ontstoppingsdienst/${place.slug}`;
   const structuredData = {
