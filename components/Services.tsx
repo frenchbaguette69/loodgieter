@@ -84,8 +84,8 @@ export default function Services() {
               <h3 className="text-2xl font-semibold leading-tight">Binnen 30 minuten onderweg naar jouw locatie</h3>
               <p className="text-sm text-slate-700 mt-3">Bel voor directe rioolhulp of plan onderhoud in wanneer het jou uitkomt.</p>
             </div>
-            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-300/40 w-fit">
-              BEL DIRECT: 085 109 1112
+            <a href="tel:+31851304693" className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-300/40 w-fit">
+              BEL DIRECT: 085 130 4693
             </a>
           </div>
         </div>

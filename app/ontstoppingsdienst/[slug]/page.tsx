@@ -88,7 +88,7 @@ export default async function PlaatsPage({ params }: { params: Promise<Params> }
     '@type': 'LocalBusiness',
     name: `Rioolhulp Gils - ${place.name}`,
     url: `https://rioolhulp-gils.nl${path}`,
-    telephone: '+31851091112',
+    telephone: '+31851304693',
     description:
       `Rioolservice in ${place.name}: 24/7 ontstoppingsdienst, camera inspectie, hogedrukreiniging en preventief onderhoud.`,
     areaServed: { '@type': 'City', name: place.name },
@@ -124,10 +124,10 @@ export default async function PlaatsPage({ params }: { params: Promise<Params> }
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851091112"
+                  href="tel:+31851304693"
                   className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  BEL DIRECT 24/7: 085 109 1112
+                  BEL DIRECT 24/7: 085 130 4693
                 </a>
                 <a
                   href="/contact"

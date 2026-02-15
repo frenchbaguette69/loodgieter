@@ -38,8 +38,8 @@ export default function About() {
             <p className="text-lg text-slate-500 leading-relaxed">
               Rioolhulp Gils lost verstoppingen, stankproblemen en inspecties snel en vakkundig op. Heldere communicatie, nette afwerking en een vaste prijs vooraf: zo weet je precies waar je aan toe bent.
             </p>
-            <a href="tel:+31851091112" className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full text-base font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40 inline-block">
-              BEL DIRECT: 085 109 1112
+            <a href="tel:+31851304693" className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full text-base font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40 inline-block">
+              BEL DIRECT: 085 130 4693
             </a>
           </div>
         </div>

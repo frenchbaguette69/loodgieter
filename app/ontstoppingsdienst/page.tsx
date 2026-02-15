@@ -92,7 +92,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Rioolhulp Gils - 24/7 Ontstoppingsdienst',
   url: 'https://rioolhulp-gils.nl/ontstoppingsdienst',
-  telephone: '+31851091112',
+  telephone: '+31851304693',
   description:
     '24/7 ontstoppingsdienst voor wc, riool, keuken- en badkamerafvoer. Spoedservice, camera inspectie en preventief onderhoud in Gils en omgeving.',
   image: '/assets/rioolhulp.jpg',
@@ -170,10 +170,10 @@ export default function OntstoppingsdienstPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+31851091112"
+                href="tel:+31851304693"
                 className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
               >
-                BEL DIRECT 24/7: 085 109 1112
+                BEL DIRECT 24/7: 085 130 4693
               </a>
               <a
                 href="#faq"
@@ -225,10 +225,10 @@ export default function OntstoppingsdienstPage() {
               </p>
             </div>
             <a
-              href="tel:+31851091112"
+              href="tel:+31851304693"
               className="self-start bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              BEL DIRECT 24/7: 085 109 1112
+              BEL DIRECT 24/7: 085 130 4693
             </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -282,7 +282,7 @@ export default function OntstoppingsdienstPage() {
               </div>
               <div>
                 <p className="text-sm text-slate-600 uppercase tracking-wide">Spoedlijn</p>
-                <p className="text-2xl font-semibold text-slate-900">085 109 1112</p>
+                <p className="text-2xl font-semibold text-slate-900">085 130 4693</p>
               </div>
             </div>
             <p className="text-sm text-slate-700 leading-relaxed">
@@ -296,10 +296,10 @@ export default function OntstoppingsdienstPage() {
               <div className="p-3 rounded bg-white border border-slate-200">Keurmerken op orde</div>
             </div>
             <a
-              href="tel:+31851091112"
+              href="tel:+31851304693"
               className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              BEL DIRECT 24/7: 085 109 1112
+              BEL DIRECT 24/7: 085 130 4693
             </a>
           </div>
         </div>
@@ -337,10 +337,10 @@ export default function OntstoppingsdienstPage() {
               <span className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-full">24/7 Service</span>
             </div>
             <a
-              href="tel:+31851091112"
+              href="tel:+31851304693"
               className="inline-flex items-center justify-center bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              BEL DIRECT 24/7: 085 109 1112
+              BEL DIRECT 24/7: 085 130 4693
             </a>
           </div>
         </div>
@@ -364,14 +364,14 @@ export default function OntstoppingsdienstPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-slate-50 border border-slate-200 rounded-md p-5">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">Hulp nodig?</p>
-              <h3 className="text-xl font-semibold">BEL DIRECT: 085 109 1112</h3>
+              <h3 className="text-xl font-semibold">BEL DIRECT: 085 130 4693</h3>
               <p className="text-sm text-slate-600">Altijd bereikbaar voor spoed en advies.</p>
             </div>
             <a
-              href="tel:+31851091112"
+              href="tel:+31851304693"
               className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
             >
-              BEL DIRECT 24/7: 085 109 1112
+              BEL DIRECT 24/7: 085 130 4693
             </a>
           </div>
           </div>

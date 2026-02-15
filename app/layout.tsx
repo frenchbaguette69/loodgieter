@@ -118,8 +118,8 @@ export default function RootLayout({
                 if (!anchor) return;
 
                 const href = anchor.getAttribute('href') || '';
-                const isCall = href.startsWith('tel:+31851091112');
-                const isWhatsApp = href.includes('wa.me/31851091112');
+                const isCall = href.startsWith('tel:+31851304693');
+                const isWhatsApp = href.includes('wa.me/31851304693');
                 if (!isCall && !isWhatsApp) return;
 
                 event.preventDefault();

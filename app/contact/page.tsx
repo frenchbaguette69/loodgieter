@@ -43,10 +43,10 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851091112"
+                  href="tel:+31851304693"
                   className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  BEL DIRECT 24/7: 085 109 1112
+                  BEL DIRECT 24/7: 085 130 4693
                 </a>
                 <a
                   href="mailto:info@loodgieter-gils.nl"
@@ -93,8 +93,8 @@ export default function ContactPage() {
               </p>
               <div className="space-y-2 text-sm text-slate-600">
                 <p className="font-semibold text-slate-900">24/7 telefonisch</p>
-                <a href="tel:+31851091112" className="inline-flex items-center w-fit bg-lime-300 text-slate-900 px-4 py-2.5 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40">
-                  BEL DIRECT 085 109 1112
+                <a href="tel:+31851304693" className="inline-flex items-center w-fit bg-lime-300 text-slate-900 px-4 py-2.5 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40">
+                  BEL DIRECT 085 130 4693
                 </a>
                 <p className="pt-2 font-semibold text-slate-900">E-mail</p>
                 <a href="mailto:info@loodgieter-gils.nl" className="text-sky-600 font-semibold hover:text-sky-700 transition-colors">

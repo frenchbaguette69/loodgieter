@@ -15,7 +15,7 @@ const structuredData = {
   '@type': 'Plumber',
   name: 'Rioolhulp Gils',
   url: 'https://rioolhulp-gils.nl',
-  telephone: '+31851091112',
+  telephone: '+31851304693',
   description:
     'Rioolhulp Gils biedt 24/7 ontstoppingsdienst, rioolonderhoud, camera inspectie, spoedservice, rioolreiniging en preventieve afvoerreiniging.',
   image: '/assets/rioolhulp.jpg',

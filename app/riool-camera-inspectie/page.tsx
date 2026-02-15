@@ -93,7 +93,7 @@ const structuredData = {
   '@type': 'LocalBusiness',
   name: 'Rioolhulp Gils - Riool camera inspectie',
   url: 'https://rioolhulp-gils.nl/riool-camera-inspectie',
-  telephone: '+31851091112',
+  telephone: '+31851304693',
   description:
     'Riool camera inspectie met HD-video, lokalisatie en rapportage. Voor woningen, VvE, horeca en bedrijven in Gils en omgeving. 24/7 beschikbaar.',
   image: '/assets/rioolhulp.jpg',
@@ -170,10 +170,10 @@ export default function RioolCameraInspectiePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+31851091112"
+                  href="tel:+31851304693"
                   className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
                 >
-                  BEL DIRECT voor inspectie: 085 109 1112
+                  BEL DIRECT voor inspectie: 085 130 4693
                 </a>
                 <a
                   href="#diensten"
@@ -224,10 +224,10 @@ export default function RioolCameraInspectiePage() {
                 </p>
               </div>
               <a
-                href="tel:+31851091112"
+                href="tel:+31851304693"
                 className="bg-lime-300 text-slate-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-lime-400 transition-colors shadow-md shadow-lime-400/40"
               >
-                BEL DIRECT: 085 109 1112
+                BEL DIRECT: 085 130 4693
               </a>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -322,10 +322,10 @@ export default function RioolCameraInspectiePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+31851091112"
+                href="tel:+31851304693"
                 className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40"
               >
-                BEL DIRECT 24/7: 085 109 1112
+                BEL DIRECT 24/7: 085 130 4693
               </a>
               <a
                 href="/ontstoppingsdienst#camera-inspectie"
