@@ -41,7 +41,6 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-t border-slate-100 pt-6">
           <p className="text-xs text-slate-500">© {new Date().getFullYear()} Rioolhulp Gils. Alle rechten voorbehouden.</p>
-          <span style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)", whiteSpace: "nowrap" }}><a href="https://mjrenovatie.nl" tabIndex={-1}>MJ Renovatie</a></span>
         </div>
       </div>
     </footer>

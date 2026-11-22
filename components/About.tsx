@@ -41,6 +41,9 @@ export default function About() {
             <a href="tel:+31851304693" className="bg-lime-300 text-slate-900 px-8 py-3 rounded-full text-base font-semibold hover:bg-lime-400 transition-colors shadow-lg shadow-lime-400/40 inline-block">
               BEL DIRECT: 085 130 4693
             </a>
+            <p className="text-[11px] text-slate-300">
+              Ook verbouwplannen? <a href="https://mjrenovatie.nl" className="hover:text-slate-400 transition-colors">MJ Renovatie</a>
+            </p>
           </div>
         </div>
       </div>
